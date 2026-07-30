@@ -136,6 +136,7 @@ nav ul li a[aria-current="page"] {
     text-align: center;
     padding: 90px 24px 70px;
     background: linear-gradient(180deg, var(--blush) 0%, var(--cream) 100%);
+    animation: fadeIn 1s ease-in;
 }
 
 .hero h1 {
@@ -150,6 +151,7 @@ nav ul li a[aria-current="page"] {
     font-size: 1.1rem;
 }
 
+/* Animation fadeIn -----*/
 @keyframes fadeIn {
     from {
         opacity: 0;
@@ -161,6 +163,94 @@ nav ul li a[aria-current="page"] {
         transform: translateY(0);
     }
 }
+
+/*----- Button ----- */
+
+.btn {
+    display: inline-block;
+    background-color: var(--burgundy);
+    color: white;
+    padding: 12px 30px;
+    border-radius: var(--radius);
+    font-weight: 700;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background 0.25s ease, transform .15s ease;
+}
+
+
+.btn btn-outline {
+    background: transparent;
+    color: var(--burgundy);
+    border: 2px solid var(--burgundy);
+}
+
+.btn:hover {
+    background: var(--burgundy-dark);
+    transform: translateY(-2px);
+}
+
+/* ------Card---- */
+.section {
+    padding: 60px 0;
+}
+
+.section-title {
+    text-align: center;
+    margin-bottom: 8px;
+}
+
+.section-sub {
+    text-align: center;
+    color: var(--grey);
+    max-width: 500px;
+    margin: 0 auto 40px;
+}
+
+.grid-3 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.card {
+    background: white;
+    border: 1px solid var(--blush);
+    border-radius: var(--radius);
+    padding: 28px 22px;
+    text-align: center;
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 10px 24px rgb(from 107 39 55 0.12);
+}
+
+.card .icon {
+    font-size: 1.8rem;
+    margin-bottom: 12px;
+    color: var(--gold);
+}
+
+.card h3 {
+    font-family: 1.15rem;
+    margin-bottom: 8px;
+}
+
+.card {
+    color: var(--grey);
+    font-size: .95rem;
+}
+
+.container-action p {
+    text-align: center;
+    padding: 40px 25px;
+}
+
+
+
+
 
 /* ---Footer--- */
 footer {
