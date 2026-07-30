@@ -51,9 +51,16 @@ a {
     text-decoration: none;
 }
 
+/* Images */
 img {
     max-width: 100%;
     display: block;
+}
+
+.container {
+    max-width: var(--max-width);
+    margin: 0 auto;
+    padding: 0 25px;
 }
 
 /* ---Footer--- */
