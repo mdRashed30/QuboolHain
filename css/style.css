@@ -14,7 +14,7 @@
     --blush: #f7e7e0;
     --charcoal: #2e2a26;
     --grey: #7a756e;
-    --radius: 10Px;
+    --radius: 10px;
     --max-width: 1100px;
 }
 
@@ -32,8 +32,9 @@ html {
 /* Body */
 
 body {
-    font-family: "lato", sans-serif;
+    font-family: 'Lato', sans-serif;
     color: var(--charcoal);
+    background: var(--cream);
     line-height: 1.65;
 }
 
@@ -41,7 +42,7 @@ body {
 h1,
 h2,
 h3 {
-    font-family: "playfair display", serif;
+    font-family: 'Playfair Display', serif;
     font-weight: 700;
     color: var(--burgundy-dark);
 }
@@ -61,6 +62,104 @@ img {
     max-width: var(--max-width);
     margin: 0 auto;
     padding: 0 25px;
+}
+
+/* Header */
+header {
+    background: var(--cream);
+    border-bottom: 1px solid var(--blush);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.nav-wrap {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 16px 24px;
+    max-width: var(--max-width);
+    margin: 0 auto;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    height: 60px;
+    width: auto;
+    display: block;
+}
+
+.nav-toggle {
+    display: none;
+    flex-direction: column;
+    gap: 5px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 8px;
+}
+
+.nav-toggle span {
+    width: 26px;
+    height: 2px;
+    background: var(--burgundy);
+    display: block;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+
+nav ul li a {
+    font-weight: 700;
+    font-size: .95rem;
+    letter-spacing: .3px;
+    padding: 6px 2px;
+    border-bottom: 2px solid transparent;
+}
+
+nav ul li a:hover,
+nav ul li a[aria-current="page"] {
+    color: var(--burgundy);
+    border-color: var(--gold);
+}
+
+/* hero */
+
+.hero {
+    text-align: center;
+    padding: 90px 24px 70px;
+    background: linear-gradient(180deg, var(--blush) 0%, var(--cream) 100%);
+}
+
+.hero h1 {
+    font-size: clamp(2rem, 5vw, 3.2rem);
+    margin-bottom: 16px;
+}
+
+.hero p {
+    max-width: 550px;
+    margin: 0 auto 28px;
+    color: var(--grey);
+    font-size: 1.1rem;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(12px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
 /* ---Footer--- */
