@@ -386,3 +386,24 @@ footer p {
     font-size: .80rem;
     opacity: .80;
 }
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+    flex-wrap: wrap;
+    margin-bottom: 12px;
+}
+
+.social-links a {
+    color: white;
+    font-size: .85rem;
+    font-weight: 700;
+    letter-spacing: .3px;
+    border-bottom: 5px solid transparent;
+}
+
+.social-links a:hover {
+    border-color: red;
+    opacity: .85;
+}
