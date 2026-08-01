@@ -258,7 +258,76 @@ nav ul li a[aria-current="page"] {
     font-size: 0.9rem;
 }
 
+/* -----Forms--- */
+form {
+    background: #fff;
+    border: 1px solid var(--blush);
+    border-radius: var(--radius);
+    padding: 32px;
+    max-width: 700;
+    margin: 0 auto;
+}
 
+
+.form-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group.full {
+    grid-column: 1 / -1;
+}
+
+label {
+    font-weight: 700;
+    font-size: .9rem;
+    margin-bottom: 7px;
+    color: var(--burgundy-dark);
+}
+
+input,
+select,
+textarea {
+    font-size: 'Lato', sans-serif;
+    padding: 10px 12px;
+    border: 1px solid #f7e7e0;
+    border-radius: 6px;
+    font-size: 1rem;
+    background: var(--cream);
+}
+
+input:focus select:focus textarea:focus {
+    outline: none;
+    border-color: var(--gold);
+    box-shadow: rgb(4, 242, 4);
+}
+
+.error-msg {
+    color: red;
+    font-size: .8rem;
+    margin-top: 4px;
+    min-height: 1em;
+}
+
+.checkbox-row {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    grid-column: 1 / -1;
+    font-size: .9rem;
+    color: var(--grey);
+}
+
+.checkbox-row input {
+    width: auto;
+}
 
 /* ---Footer--- */
 footer {
