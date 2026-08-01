@@ -228,7 +228,7 @@ nav ul li a[aria-current="page"] {
 
 .card:hover {
     transform: translateY(-4px);
-    box-shadow: 0 10px 24px rgb(from 107 39 55 0.12);
+    box-shadow: 0 10px 24px rgb(107, 39, 55, 0.12);
 }
 
 .card .icon {
