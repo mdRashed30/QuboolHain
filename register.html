@@ -15,8 +15,10 @@
   </head>
 
   <body>
+    <!-- Website Header -->
     <header>
       <div class="nav-wrap">
+        <!-- Website Logo -->
         <a href="index.html" class="logo">
           <img
             src="images/logo.png"
@@ -24,7 +26,7 @@
             style="height: 100px; width: auto"
           />
         </a>
-
+        <!-- Mobile Navigation Toggle -->
         <button class="nav-toggle" aria-label="Toggle navigation menu">
           <span></span>
           <span></span>
@@ -42,6 +44,7 @@
         </nav>
       </div>
     </header>
+    <!-- Hero Section -->
     <section class="hero" style="padding: 60px 24px">
       <h1>Creating your profile</h1>
       <p>
@@ -55,7 +58,10 @@
         will review your profile shortly
       </div>
 
+      <!--Register Form-->
+
       <form id="registration-form" novalidate>
+        <!--Full Name-->
         <div class="form-row">
           <div class="form-group full">
             <label for="fullname">Full name *</label>
@@ -69,6 +75,7 @@
             <div class="error-msg" id="fullname-error"></div>
           </div>
         </div>
+        <!--Gender and age-->
         <div class="form-row">
           <div class="form-group">
             <label for="age">Age *</label>
@@ -91,7 +98,7 @@
             </select>
             <div class="error-msg" id="gender-error"></div>
           </div>
-
+          <!--Contact information-->
           <div class="form-row">
             <div class="form-group">
               <label for="email">Email Address * </label>
@@ -105,6 +112,8 @@
             <div class="error-msg" id="phone-error"></div>
           </div>
         </div>
+
+        <!--Password-->
 
         <div class="form-row">
           <div class="form-group">
@@ -130,6 +139,8 @@
             </div>
           </div>
 
+          <!--Sect-->
+
           <div class="form-row">
             <div class="form-group full">
               <label for="religion">Sect</label>
@@ -140,6 +151,8 @@
               </select>
             </div>
           </div>
+
+          <!--Preferences-->
 
           <div class="form-row">
             <div class="form-group full">
@@ -152,6 +165,9 @@
               ></textarea>
             </div>
           </div>
+
+          <!--Terms and Conditions-->
+
           <div class="form-row">
             <div class="checkbox-row">
               <input type="checkbox" id="terms" name="terms" required />
@@ -166,11 +182,15 @@
             ></div>
           </div>
         </div>
+
+        <!--Submit Button-->
         <button type="submit" class="btn" style="width: 100%; margin-top: 10px">
           Submit registration
         </button>
       </form>
     </section>
+
+    <!--Website footer-->
 
     <footer>
       <p>
@@ -178,6 +198,7 @@
         rights reserved.
       </p>
     </footer>
+    <!--External JavaScript-->
     <script src="js/script.js"></script>
   </body>
 </html>
