@@ -491,4 +491,18 @@ footer p {
         text-align: center;
     }
 
+    .section {
+        padding: 40px;
+    }
+
+    .section-title {
+        text-align: center;
+        margin: 0 auto 20px;
+
+    }
+
+    .section p {
+        text-align: center;
+        width: 100%;
+    }
 }
