@@ -180,11 +180,6 @@ nav ul li a[aria-current="page"] {
 }
 
 
-.btn .btn-outline {
-    background: transparent;
-    color: var(--burgundy);
-    border: 2px solid var(--burgundy);
-}
 
 .btn:hover {
     background: var(--burgundy-dark);
@@ -407,3 +402,5 @@ footer p {
     border-color: red;
     opacity: .85;
 }
+
+/* Responsive */
