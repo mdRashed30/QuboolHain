@@ -184,6 +184,7 @@ nav ul li a[aria-current="page"] {
 
 
 
+
 .btn:hover {
     background: var(--burgundy-dark);
     transform: translateY(-2px);
@@ -402,7 +403,7 @@ footer p {
 }
 
 .social-links a:hover {
-    border-color: red;
+    border-color: var(--gold);
     opacity: .85;
 }
 
@@ -423,6 +424,7 @@ footer p {
         display: flex;
     }
 
+
     nav ul {
         display: none;
         flex-direction: column;
@@ -431,7 +433,7 @@ footer p {
         left: 0;
         right: 0;
         background: var(--cream);
-        border-bottom: 1px solid var(--blush);
+        border-bottom: 5px solid var(--blush);
         padding: 16px 24px;
         gap: 16px;
     }
@@ -461,7 +463,9 @@ footer p {
     }
 
     .grid-3 {
+        display: grid;
         grid-template-columns: 1fr;
+        gap: 25px;
 
     }
 
@@ -470,8 +474,21 @@ footer p {
     }
 
     table.plans {
-        display: block;
-        overflow-x: auto;
-        white-space: nowrap;
+        table.plans {
+            display: block;
+            width: 100%;
+            overflow-x: auto;
+            white-space: nowrap;
+            -webkit-overflow-scrolling: touch;
+
+        }
     }
+
+    .btn {
+        display: block;
+        width: 100%;
+        margin: 20px;
+        text-align: center;
+    }
+
 }
