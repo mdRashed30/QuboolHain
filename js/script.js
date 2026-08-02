@@ -7,8 +7,8 @@
 
 // handle the mobile navigation 
 document.addEventListener("DOMContentLoaded", function () {
-    var toggle = document.querySelector('.nav-toggle');
-    var navList = document.querySelector('nav ul')
+    const toggle = document.querySelector('.nav-toggle');
+    const navList = document.querySelector('nav ul')
 
 
     if (toggle && navList) {
@@ -17,12 +17,5 @@ document.addEventListener("DOMContentLoaded", function () {
             toggle.classList.toggle('open');
         });
     }
-
-    var email = document.querySelector('#email');
-    var emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/; // took from google search 
-    if (!emailPattern.test(email.value.trim())) {
-        showError('email', 'Please enter a valid email address.');
-    } else { clearError('email') };
-
 
 })
