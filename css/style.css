@@ -4,6 +4,8 @@
         File Name: style.css
         Date: July 30, 2026 
 */
+
+/* Fonts: Playfair Display and Lato from google fonts. its free for use*/
 @import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Lato:wght@400;700&display=swap");
 
 :root {
@@ -101,6 +103,7 @@ header {
     border: none;
     cursor: pointer;
     padding: 8px;
+
 }
 
 .nav-toggle span {
@@ -404,3 +407,71 @@ footer p {
 }
 
 /* Responsive */
+
+@media (max-width:900px) {
+    .grid-3 {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .form-row {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media(max-width:700px) {
+    .nav-toggle {
+        display: flex;
+    }
+
+    nav ul {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background: var(--cream);
+        border-bottom: 1px solid var(--blush);
+        padding: 16px 24px;
+        gap: 16px;
+    }
+
+    nav ul.nav-open {
+        display: flex;
+    }
+
+    .nav-wrap {
+        position: relative;
+    }
+
+    .nav-toggle span {
+        transition: transform .2s ease, opacity .2s ease;
+    }
+
+    .nav-toggle.open span:nth-child(1) {
+        transform: translateY(7px) rotate(45deg);
+    }
+
+    .nav-toggle.open span:nth-child(2) {
+        opacity: 0;
+    }
+
+    .nav-toggle.open span:nth-child(3) {
+        transform: translateY(-7px) rotate(-45deg);
+    }
+
+    .grid-3 {
+        grid-template-columns: 1fr;
+
+    }
+
+    form {
+        padding: 22px;
+    }
+
+    table.plans {
+        display: block;
+        overflow-x: auto;
+        white-space: nowrap;
+    }
+}

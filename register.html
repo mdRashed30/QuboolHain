@@ -54,7 +54,7 @@
     </section>
     <section class="section container" aria-label="Registration Form">
       <div class="form-success">
-        Registration successful! Welcome to QuboolHain Matrimonial. Out trem
+        Registration successful! Welcome to QuboolHain Matrimonial. Our team
         will review your profile shortly
       </div>
 
@@ -89,6 +89,9 @@
             />
             <div class="error-msg" id="age-error"></div>
           </div>
+        </div>
+
+        <div class="form-row">
           <div class="form-group">
             <label for="gender">Gender *</label>
             <select id="gender" name="gender" required>
@@ -98,14 +101,16 @@
             </select>
             <div class="error-msg" id="gender-error"></div>
           </div>
-          <!--Contact information-->
-          <div class="form-row">
-            <div class="form-group">
-              <label for="email">Email Address * </label>
-              <input type="email" id="email" name="email" required />
-              <div class="error-msg" id="email-error"></div>
-            </div>
+        </div>
+
+        <!--Contact information-->
+        <div class="form-row">
+          <div class="form-group">
+            <label for="email">Email Address * </label>
+            <input type="email" id="email" name="email" required />
+            <div class="error-msg" id="email-error"></div>
           </div>
+
           <div class="form-group">
             <label for="phone">Phone number * </label>
             <input type="tel" id="phone" name="phone" required />
@@ -126,62 +131,62 @@
               minlength="10"
             />
             <div class="error-msg" id="password-error"></div>
-            <div class="form-group">
-              <label for="confirm-password">Confirm password</label>
-              <input
-                type="password"
-                id="confirm-password"
-                name="confirm-password"
-                required
-                minlength="10"
-              />
-              <div class="error-msg" id="confirm-password-error"></div>
-            </div>
           </div>
-
-          <!--Sect-->
-
-          <div class="form-row">
-            <div class="form-group full">
-              <label for="religion">Sect</label>
-              <select id="religion" name="religion">
-                <option value="select">Select Sect</option>
-                <option value="sunni">Sunni</option>
-                <option value="shia">Shia</option>
-                <option value="Other">Others</option>
-              </select>
-            </div>
+          <div class="form-group">
+            <label for="confirm-password">Confirm password</label>
+            <input
+              type="password"
+              id="confirm-password"
+              name="confirm-password"
+              required
+              minlength="10"
+            />
+            <div class="error-msg" id="confirm-password-error"></div>
           </div>
+        </div>
 
-          <!--Preferences-->
+        <!--Sect-->
 
-          <div class="form-row">
-            <div class="form-group full">
-              <label for="preferences"> Partner preference</label>
-              <textarea
-                id="preferences"
-                name="preferences"
-                rows="5"
-                placeholder="Tell us what you're looking for in a partner?"
-              ></textarea>
-            </div>
+        <div class="form-row">
+          <div class="form-group full">
+            <label for="religion">Sect</label>
+            <select id="religion" name="religion">
+              <option value="select">Select Sect</option>
+              <option value="sunni">Sunni</option>
+              <option value="shia">Shia</option>
+              <option value="Other">Other</option>
+            </select>
           </div>
+        </div>
 
-          <!--Terms and Conditions-->
+        <!--Preferences-->
 
-          <div class="form-row">
-            <div class="checkbox-row">
-              <input type="checkbox" id="terms" name="terms" required />
-              <label for="terms" style="font-weight: 300; margin: 0"
-                >I agree to the term of service and private policy *</label
-              >
-            </div>
-            <div
-              class="error-msg"
-              id="terms-error"
-              style="grid-column: 1 / -1"
-            ></div>
+        <div class="form-row">
+          <div class="form-group full">
+            <label for="preferences"> Partner preference</label>
+            <textarea
+              id="preferences"
+              name="preferences"
+              rows="5"
+              placeholder="Tell us what you're looking for in a partner?"
+            ></textarea>
           </div>
+        </div>
+
+        <!--Terms and Conditions-->
+
+        <div class="form-row">
+          <div class="checkbox-row">
+            <input type="checkbox" id="terms" name="terms" required />
+            <label for="terms" style="font-weight: 300; margin: 0"
+              >I agree to the terms of service and private policy *</label
+            >
+          </div>
+          <div
+            class="error-msg"
+            id="terms-error"
+            style="grid-column: 1 / -1"
+          ></div>
         </div>
 
         <!--Submit Button-->
@@ -194,6 +199,7 @@
     <!--Website footer-->
 
     <footer>
+      <!--Our company social links-->
       <div class="social-links">
         <a
           href="https://www.facebook.com/Quboolhain"
